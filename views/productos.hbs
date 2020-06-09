@@ -10,7 +10,7 @@
         </select>
 
         <input class="search_input" type="text" name="productId" id="productId" placeholder="Introduce busqueda...">
-        <button type="submit">Buscar</button>
+        <button class="btn btn-primary" type="submit">Buscar</button>
 
     </form>
 
@@ -48,8 +48,8 @@
                 <td>{{category}}</td>
                 <td>{{description}}</td>
                 <td>
-                    <form action="/api/product/{{_id}}" method="GET">
-                        <button class="btn  btn-primary" type="submit">Editar</button>
+                    <form action="/api/product/{{personaCurp}}" method="GET">
+                        <button class="btn btn-primary" type="submit">Editar</button>
                     </form>
                 </td>
 
